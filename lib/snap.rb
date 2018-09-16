@@ -3,6 +3,8 @@ require 'httparty'
 require 'snap/version'
 require 'snap/client'
 
+require 'snap/api/shipments'
+
 # Top level module for the Snap gem.
 module Snap
   class << self

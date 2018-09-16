@@ -1,5 +1,8 @@
 # Snap
 
+[![Maintainability](https://api.codeclimate.com/v1/badges/818c40e75cd06a101b79/maintainability)](https://codeclimate.com/github/MeUndies/snap/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/818c40e75cd06a101b79/test_coverage)](https://codeclimate.com/github/MeUndies/snap/test_coverage)
+
 A ruby gem to interact with the Snapfulfil API.
 
 ## Installation

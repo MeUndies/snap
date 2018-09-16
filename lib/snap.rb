@@ -1,3 +1,5 @@
+require 'httparty'
+
 require 'snap/version'
 
 # Top level module for the Snap gem.

@@ -23,6 +23,26 @@ RSpec.describe Snap::Api::Shipments do
     end
   end
 
+  describe '#destroy' do
+    subject { described_class.destroy(id: id) }
+
+    context 'when the shipment exists in Snap' do
+      let(:id) { 'TEST-DELETE-000' }
+
+      it 'deletes the shipment', :vcr do
+        expect(subject.code).to eq 204
+      end
+    end
+
+    context 'when the shipment does not exist in Snap' do
+      let(:id) { 'TEST-DELETE-980980980' }
+
+      it 'does not find the shipment', :vcr do
+        expect(subject.code).to eq 404
+      end
+    end
+  end
+
   describe '#create' do
     subject { described_class.create(options) }
 

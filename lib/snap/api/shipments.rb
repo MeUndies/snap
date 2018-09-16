@@ -9,6 +9,10 @@ module Snap
         client.get("/shipments/#{id}")
       end
 
+      def self.destroy(id:)
+        client.delete("/shipments/#{id}")
+      end
+
       def self.create(options)
         shipment = Snap::Shipment.new(options)
         client.post('/shipments', body: shipment)

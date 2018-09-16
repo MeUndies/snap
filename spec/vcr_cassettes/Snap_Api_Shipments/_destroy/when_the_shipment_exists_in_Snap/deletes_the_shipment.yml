@@ -1,0 +1,87 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://mutestapi.snapfulfil.net/api/shipments
+    body:
+      encoding: UTF-8
+      string: ShipmentId=TEST-DELETE-000&CustomerId=1&DateDueOut=2018-09-16T00%3A18%3A52-07%3A00
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic TVVBUEk6TVVBUEkx
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Location:
+      - https://mutestapi.snapfulfil.net/Sandbox/Index/TEST-DELETE-000
+      Server:
+      - Microsoft-IIS/8.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sun, 16 Sep 2018 07:18:35 GMT
+      Content-Length:
+      - '1662'
+    body:
+      encoding: UTF-8
+      string: '{"ShipmentId":"TEST-DELETE-000","BizId":"BIZ1","BizSalesOrder":null,"Status":"00","OrderType":"S01","OrderClass":"SHIP","CustomerId":"1","BizCustomerId":null,"CustomerGroup":null,"CustomerName":null,"ShippingAddressId":"ADD1","InvoiceAddressId":"ADD1","Site":"0001","Warehouse":"MEUNDIES","OwnerId":"MEUNDIES","StockStatus":"00","SalesOrder":null,"Prime":"TEST-DELETE-000","PriorityAllocation":"03","PriorityDespatch":"03","CustomerRef":null,"ConsigmentId":"TEST-DELETE-000","PickGroupId":null,"ASNNumber":null,"DNoteNumber":null,"InvoiceNumber":null,"ManifestNumber":null,"POD":null,"ShippingMethod":null,"Region":null,"CarrierId":null,"CarrierTrackingNumber":null,"Route":null,"LoadId":null,"LoadSequence":0.0,"PackStation":null,"ShippingLane":"GO01","ReturnReason":null,"QC":null,"Lines":0.0,"LineQty":0.0,"StUQty":null,"Volume":0.000000,"Weight":0.000000,"ActualWeight":0.000000,"TaskCountNew":null,"TaskCountCurrent":null,"TaskCountActioned":null,"TimeToPick":0.0,"TimeToPack":0.0,"TimeToCheck":0.0,"TimeToLoad":0.0,"TimeOther":0.0,"TimeToDeliver":0.0,"InvoiceInd":null,"Currency":"USD","LineValue":null,"Discount":null,"Packing":null,"Freight":null,"Insurance":null,"Charges":0.000000,"Allowances":null,"Tax":null,"InvoiceValue":null,"ShortageCode":null,"Variance":null,"CutOffInd":"0","Supervisor":null,"Reason":null,"DateCreated":"2018-09-16T00:18:35","DateSuspended":null,"DateClosed":null,"DateDueOut":"2018-09-16T03:18:52","DateShipment":"2018-09-16T03:18:52","DateDelivery":"2018-09-16T03:18:52","DateInvoice":null,"ASNInd":null,"OverdueInd":"0","Stage":"00","MaintInd":"H","ShipmentLines":[],"ShipAddress":[],"ShipContacts":[],"ShipmentDespatch":[]}'
+    http_version: 
+  recorded_at: Sun, 16 Sep 2018 07:18:53 GMT
+- request:
+    method: delete
+    uri: https://mutestapi.snapfulfil.net/api/shipments/TEST-DELETE-000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic TVVBUEk6TVVBUEkx
+  response:
+    status:
+      code: 204
+      message: No Content
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/8.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sun, 16 Sep 2018 07:18:37 GMT
+    body:
+      encoding: UTF-8
+      string: ''
+    http_version: 
+  recorded_at: Sun, 16 Sep 2018 07:18:55 GMT
+recorded_with: VCR 4.0.0

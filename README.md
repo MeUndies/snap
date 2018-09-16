@@ -9,7 +9,11 @@ A ruby gem to interact with the Snapfulfil API.
 
 Add this line to your application's Gemfile:
 
-```ruby gem 'snap' ```
+```ruby
+
+gem 'snap-api', require: 'snap'
+
+```
 
 And then execute:
 

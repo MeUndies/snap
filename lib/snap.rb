@@ -5,6 +5,8 @@ require 'snap/version'
 require 'snap/client'
 
 require 'snap/api/shipments'
+
+require 'snap/models/shipment_line'
 require 'snap/models/shipment'
 
 # Top level module for the Snap gem.

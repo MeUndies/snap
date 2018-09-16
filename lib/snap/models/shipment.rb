@@ -3,6 +3,7 @@ module Snap
     # A representation of a Snap Shipment object.
     class Shipment < Hashie::Dash
       include Hashie::Extensions::IndifferentAccess
+      include Hashie::Extensions::Dash::Coercion
 
       property :ShipmentId, required: true
       property :BizId
@@ -85,7 +86,7 @@ module Snap
       property :OverdueInd
       property :Stage
       property :MaintInd
-      property :ShipmentLines
+      property :ShipmentLines, coerce: Array[Models::ShipmentLine]
       property :ShipAddress
       property :ShipContacts
       property :ShipmentDespatch

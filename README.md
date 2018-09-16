@@ -1,3 +1,5 @@
+![Bag Logo](https://user-images.githubusercontent.com/1624718/45594013-e7593580-b947-11e8-911c-282ae1d19654.png)
+
 # Snap
 
 [![Gem Version](https://badge.fury.io/rb/snap-api.svg)](https://badge.fury.io/rb/snap-api)

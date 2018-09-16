@@ -11,30 +11,32 @@ A ruby gem to interact with the Snapfulfil API.
 Add this line to your application's Gemfile:
 
 ```ruby
-
 gem 'snap-api', require: 'snap'
-
 ```
 
 And then execute:
 
     $ bundle
 
-Or install it yourself as:
-
-    $ gem install snap
-
 ```ruby
+
 Snap.configure do |config|
   config.endpoint = 'https://your-api-endpoint'
   config.username = 'Fred'
   config.password = 'Rogers'
 end
+
 ```
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+
+Snap::Api::Shipments.find(id: 'your-shipment-id')
+
+```
+
+
 
 ## Development
 

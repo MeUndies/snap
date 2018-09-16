@@ -5,4 +5,5 @@ set -vx
 
 bundle install
 
-cp -i .env.sample .env
+cp -i .env.sample .env ||:
+cp -i .env.sample .env.test ||:

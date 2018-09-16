@@ -1,4 +1,18 @@
 
+0.1.1 / 2018-09-16
+==================
+
+  * Add Shipments#destroy
+  * Add Shipments#create
+  * Add image to readme
+  * Add basic usage instructions
+  * Update Gem install instructions
+  * Add Snap shipment model
+  * Add gem version badge
+  * Add CodeClimate badges
+  * Update rake requirement from ~> 10.0 to ~> 12.3
+  * Add Changelog
+
 0.1.0 / 2018-09-15
 ==================
 

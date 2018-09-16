@@ -17,6 +17,10 @@ module Snap
         shipment = Snap::Shipment.new(options)
         client.post('/shipments', body: shipment)
       end
+
+      def self.model
+        Snap::Shipment
+      end
     end
   end
 end

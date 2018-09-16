@@ -3,7 +3,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'snap/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'snap'
+  spec.name          = 'snap-api'
   spec.version       = Snap::VERSION
   spec.authors       = ['Andrew Hood']
   spec.email         = ['andrewhood125@gmail.com']

@@ -1,5 +1,6 @@
 # Snap
 
+[![Gem Version](https://badge.fury.io/rb/snap-api.svg)](https://badge.fury.io/rb/snap-api)
 [![Maintainability](https://api.codeclimate.com/v1/badges/818c40e75cd06a101b79/maintainability)](https://codeclimate.com/github/MeUndies/snap/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/818c40e75cd06a101b79/test_coverage)](https://codeclimate.com/github/MeUndies/snap/test_coverage)
 

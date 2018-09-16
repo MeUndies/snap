@@ -4,6 +4,12 @@ module Snap
     class Shipment < Hashie::Dash
       include Hashie::Extensions::IndifferentAccess
       include Hashie::Extensions::Dash::Coercion
+      include ActiveModel::Validations
+
+      def initialize(*args)
+        super(*args)
+        validate!
+      end
 
       property :ShipmentId, required: true
       property :BizId
@@ -90,6 +96,8 @@ module Snap
       property :ShipAddress
       property :ShipContacts
       property :ShipmentDespatch
+
+      validates :CustomerName, length: { maximum: 50 }
     end
   end
 end

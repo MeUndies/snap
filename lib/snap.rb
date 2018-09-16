@@ -1,3 +1,4 @@
+require 'active_model'
 require 'hashie'
 require 'httparty'
 

@@ -6,8 +6,10 @@ require 'snap/version'
 require 'snap/client'
 require 'snap/response'
 
+require 'snap/api/shipment_status'
 require 'snap/api/shipments'
 
+require 'snap/models/shipment_status'
 require 'snap/models/shipment_line'
 require 'snap/models/shipment'
 

@@ -27,6 +27,12 @@ module Snap
       end
     end
 
+    def put(*args, &block)
+      wrap_response do
+        super(*args, &block)
+      end
+    end
+
     def wrap_response
       Snap::Response.new(yield, model)
     end

@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://mutestapi.snapfulfil.net/api/shipments/JTEST1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+      Authorization:
+      - Basic TVVBUEk6TVVBUEkx
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/8.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Sun, 16 Sep 2018 05:15:34 GMT
+      Content-Length:
+      - '3003'
+    body:
+      encoding: UTF-8
+      string: '{"ShipmentId":"JTEST1","BizId":"BIZ1","BizSalesOrder":null,"Status":"00","OrderType":"S01","OrderClass":"SHIP","CustomerId":"TEST","BizCustomerId":null,"CustomerGroup":null,"CustomerName":"TEST","ShippingAddressId":null,"InvoiceAddressId":null,"Site":"0001","Warehouse":"MEUNDIES","OwnerId":"MEUNDIES","StockStatus":"00","SalesOrder":null,"Prime":"JTEST1","PriorityAllocation":"03","PriorityDespatch":"03","CustomerRef":null,"ConsigmentId":"JTEST1","PickGroupId":null,"ASNNumber":null,"DNoteNumber":null,"InvoiceNumber":null,"ManifestNumber":null,"POD":null,"ShippingMethod":null,"Region":null,"CarrierId":null,"CarrierTrackingNumber":null,"Route":null,"LoadId":null,"LoadSequence":0.0,"PackStation":"PACK04","ShippingLane":"GO01","ReturnReason":null,"QC":null,"Lines":2.0,"LineQty":2.0,"StUQty":0.0,"Volume":0.002000,"Weight":0.200000,"ActualWeight":0.000000,"TaskCountNew":0.0,"TaskCountCurrent":0.0,"TaskCountActioned":3.0,"TimeToPick":0.0,"TimeToPack":0.0,"TimeToCheck":0.0,"TimeToLoad":0.0,"TimeOther":0.0,"TimeToDeliver":0.0,"InvoiceInd":null,"Currency":null,"LineValue":0.000000,"Discount":0.000000,"Packing":0.000000,"Freight":0.000000,"Insurance":0.000000,"Charges":0.000000,"Allowances":0.000000,"Tax":0.000000,"InvoiceValue":0.000000,"ShortageCode":null,"Variance":"1","CutOffInd":"0","Supervisor":null,"Reason":null,"DateCreated":"2018-08-16T10:52:15","DateSuspended":null,"DateClosed":null,"DateDueOut":"2018-08-17T00:00:00","DateShipment":"2018-08-17T00:00:00","DateDelivery":null,"DateInvoice":null,"ASNInd":"0","OverdueInd":"0","Stage":"39","MaintInd":"W","ShipmentLines":[{"ShipmentId":"JTEST1","Line":"JCQF4YYU06","Level":"00","SKUId":"IN100-NON","BizSKU":null,"UnitOfMeasure":"EAC","LineOwner":null,"LineStockStatus":null,"QtyOrdered":1.00,"QtyRequired":1.00,"QtyAllocated":0.00,"QtyTasked":0.00,"QtyPicked":0.00,"QtyShipped":0.00,"QtyDelivered":0.00,"QtyDueOut":1.00,"Price":0.000000,"Discount":0.000000,"TaxRate":0.000000,"SOLineId":1.00,"ReturnReason":null,"QC":null,"Shortage":null,"Variance":"1","BOInd":"0","ConsignmentId":"JTEST1","PickGroupId":null,"SiteId":"0001","Warehouse":"MEUNDIES","BizId":"BIZ1","OwnerId":"MEUNDIES","StockStatus":"00","DateShipment":"2018-08-17T00:00:00","AttachmentInd":"0","SpecialConditionInd":"0","Stage":"10"},{"ShipmentId":"JTEST1","Line":"JCQF6TZUKV","Level":"00","SKUId":"U004-WH-L","BizSKU":null,"UnitOfMeasure":"EAC","LineOwner":null,"LineStockStatus":null,"QtyOrdered":1.00,"QtyRequired":1.00,"QtyAllocated":0.00,"QtyTasked":0.00,"QtyPicked":0.00,"QtyShipped":0.00,"QtyDelivered":0.00,"QtyDueOut":1.00,"Price":0.000000,"Discount":0.000000,"TaxRate":0.000000,"SOLineId":2.00,"ReturnReason":null,"QC":null,"Shortage":null,"Variance":"1","BOInd":"0","ConsignmentId":"JTEST1","PickGroupId":null,"SiteId":"0001","Warehouse":"MEUNDIES","BizId":"BIZ1","OwnerId":"MEUNDIES","StockStatus":"00","DateShipment":"2018-08-17T00:00:00","AttachmentInd":"0","SpecialConditionInd":"0","Stage":"10"}],"ShipAddress":[],"ShipContacts":[],"ShipmentDespatch":[]}'
+    http_version: 
+  recorded_at: Sun, 16 Sep 2018 05:15:51 GMT
+recorded_with: VCR 4.0.0

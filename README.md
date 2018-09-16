@@ -16,6 +16,14 @@ Or install it yourself as:
 
     $ gem install snap
 
+```ruby
+Snap.configure do |config|
+  config.endpoint = 'https://your-api-endpoint'
+  config.username = 'Fred'
+  config.password = 'Rogers'
+end
+```
+
 ## Usage
 
 TODO: Write usage instructions here

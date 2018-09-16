@@ -6,6 +6,7 @@ require 'dotenv'
 Dotenv.load('.env.test')
 
 require 'snap'
+require_relative '../config/initializers/snap'
 
 SimpleCov.start
 

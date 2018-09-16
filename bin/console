@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 
 require 'bundler/setup'
+require 'dotenv/load'
+
 require 'snap'
 
 # You can add fixtures and/or initialization code here to make experimenting

@@ -1,6 +1,9 @@
 require 'bundler/setup'
 require 'simplecov'
 
+require 'dotenv'
+Dotenv.load('.env.test')
+
 require 'snap'
 
 SimpleCov.start

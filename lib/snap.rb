@@ -1,6 +1,7 @@
 require 'httparty'
 
 require 'snap/version'
+require 'snap/client'
 
 # Top level module for the Snap gem.
 module Snap

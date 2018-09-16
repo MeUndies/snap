@@ -40,6 +40,12 @@ release a new version, update the version number in `version.rb`, and then run
 git commits and tags, and push the `.gem` file to
 [rubygems.org](https://rubygems.org).
 
+## Tests
+
+Once you've setup your environment you can run the tests with `rake spec`. In
+order to re-record VCR cassettes you'll want to make sure you have the following
+env var set as follows: `VCR=all`.
+
 ## Contributing
 
 Bug reports and pull requests are welcome!

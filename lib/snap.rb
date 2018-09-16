@@ -4,6 +4,7 @@ require 'httparty'
 
 require 'snap/version'
 require 'snap/client'
+require 'snap/response'
 
 require 'snap/api/shipments'
 

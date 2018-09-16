@@ -1,5 +1,6 @@
 require 'bundler/setup'
 require 'simplecov'
+require 'pry'
 
 require 'dotenv'
 Dotenv.load('.env.test')

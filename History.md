@@ -1,4 +1,12 @@
 
+0.1.2 / 2018-09-16
+==================
+
+  * Add ShipmentStatus
+  * Wrap HTTParty response
+  * Add ActiveModel validations
+  * Add ShipmentLine nested model
+
 0.1.1 / 2018-09-16
 ==================
 

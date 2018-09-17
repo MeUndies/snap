@@ -10,7 +10,7 @@ module Snap
     attr_reader :model
 
     def hydrate
-      model.new(to_hash)
+      model.new(parsed_response)
     end
   end
 end

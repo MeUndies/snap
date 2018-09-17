@@ -1,4 +1,10 @@
 
+0.1.3 / 2018-09-17
+==================
+
+  * Use #parsed_response over #to_hash
+  * Add StockTotals
+
 0.1.2 / 2018-09-16
 ==================
 

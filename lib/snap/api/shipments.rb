@@ -18,6 +18,11 @@ module Snap
         client.post('/shipments', body: shipment)
       end
 
+      def self.update(options)
+        shipment = Snap::Shipment.new(options)
+        client.put("/shipments/#{shipment.ShipmentId}", body: shipment)
+      end
+
       def self.model
         Snap::Shipment
       end

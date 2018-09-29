@@ -59,4 +59,21 @@ RSpec.describe Snap::Api::Shipments do
       expect(subject['ShipmentId']).to eq 'TEST-SHIPMENT-001'
     end
   end
+
+  describe '#update' do
+    subject { described_class.update(options) }
+
+    let(:options) do
+      {
+        ShipmentId: 'TEST-SHIPMENT-001',
+        CustomerId: 1,
+        DateDueOut: DateTime.new(1849, 10, 31)
+      }
+    end
+
+    it 'updates the shipment in Snap', :vcr do
+      expect(subject.code).to eq 200
+      expect(subject['ShipmentId']).to eq 'TEST-SHIPMENT-001'
+    end
+  end
 end

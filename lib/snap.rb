@@ -6,10 +6,13 @@ require 'snap/version'
 require 'snap/client'
 require 'snap/response'
 
+require 'snap/api/outbound'
 require 'snap/api/stock_totals'
 require 'snap/api/shipment_status'
 require 'snap/api/shipments'
 
+require 'snap/models/outbound'
+require 'snap/models/outbound_list'
 require 'snap/models/stock_total'
 require 'snap/models/stock_total_list'
 require 'snap/models/shipment_status'

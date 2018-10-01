@@ -1,4 +1,10 @@
 
+0.1.4 / 2018-09-30
+==================
+
+  * Add Outbound api and models
+  * Add Shipments#update
+
 0.1.3 / 2018-09-17
 ==================
 

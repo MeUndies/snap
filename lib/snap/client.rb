@@ -34,7 +34,20 @@ module Snap
     end
 
     def wrap_response
-      Snap::Response.new(yield, model)
+      httparty_response = yield
+      snoop_for_errors(httparty_response)
+      Snap::Response.new(httparty_response, model)
+    end
+
+    def snoop_for_errors(httparty_response)
+      case httparty_response.parsed_response.class
+        # Snap can return response bodies in many different formats. How we look
+        # for and what errors can occur are dependent on that type. For example
+        # 500's mostly return raw html as a string. Pages with lists are an
+        # Array. Resource endpoints are typically Hash.
+      when Hash
+        raise Api::OrderStageError, httparty_response if httparty_response.parsed_response.value? 'ORDER_STAGE'
+      end
     end
   end
 end

@@ -8,6 +8,7 @@ require 'snap/response'
 
 require 'snap/api/errors/order_stage_error'
 
+require 'snap/api/stock_movements'
 require 'snap/api/outbound'
 require 'snap/api/stock_totals'
 require 'snap/api/shipment_status'

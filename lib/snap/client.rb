@@ -6,6 +6,7 @@ module Snap
     def client
       base_uri Snap.config.endpoint
       basic_auth(Snap.config.username, Snap.config.password)
+      headers('Content-Type' => 'application/json')
       self
     end
 

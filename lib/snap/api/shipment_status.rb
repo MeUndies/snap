@@ -7,7 +7,7 @@ module Snap
 
       def self.update(options)
         shipment_status = Snap::ShipmentStatus.new(options)
-        client.put("/shipmentstatus/#{shipment_status.ShipmentId}", body: shipment_status)
+        client.put("/shipmentstatus/#{shipment_status.ShipmentId}", body: shipment_status.to_json)
       end
 
       def self.model

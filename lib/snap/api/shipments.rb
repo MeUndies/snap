@@ -15,12 +15,15 @@ module Snap
 
       def self.create(options)
         shipment = Snap::Shipment.new(options)
-        client.post('/shipments', body: shipment)
+        client.post('/shipments', body: shipment.to_json)
       end
 
       def self.update(options)
         shipment = Snap::Shipment.new(options)
-        client.put("/shipments/#{shipment.ShipmentId}", body: shipment)
+        client.put(
+          "/shipments/#{shipment.ShipmentId}",
+          body: shipment.to_json
+        )
       end
 
       def self.model

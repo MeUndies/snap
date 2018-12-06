@@ -9,6 +9,10 @@ module Snap
         client.get('/stocktotals')
       end
 
+      def self.find(sku:)
+        client.get("/stocktotals/#{sku}")
+      end
+
       def self.model
         Snap::StockTotalList
       end

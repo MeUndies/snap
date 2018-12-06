@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://mutestapi.snapfulfil.net/api/stocktotals/B1000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Content-Type:
+      - application/json
+      Authorization:
+      - Basic TVVBUEk6TVVBUEkx
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Cache-Control:
+      - no-cache
+      Pragma:
+      - no-cache
+      Content-Type:
+      - application/json; charset=utf-8
+      Expires:
+      - "-1"
+      Server:
+      - Microsoft-IIS/8.5
+      X-Aspnet-Version:
+      - 4.0.30319
+      X-Powered-By:
+      - ASP.NET
+      Date:
+      - Thu, 06 Dec 2018 20:29:21 GMT
+      Content-Length:
+      - '349'
+    body:
+      encoding: UTF-8
+      string: '[{"SKUId":"B1000","LineID":"JJ5GJ39585","State":"W","Site":"0001","Facility":"MEUNDIES","BizId":"BIZ1","OwnerId":"MEUNDIES","Status":"00","Unit":"EAC","Qty":0.0,"QtyAllocated":0.0,"QtyAssigned":0.0,"QtyOrderIn":0.0,"QtyDueIn":11800.0,"QtyOrderOut":0.0,"QtyDueOut":0.0,"StockLevelIndicator":"00","DateLastMoved":"2018-11-30T09:51:22","Product":null}]'
+    http_version: 
+  recorded_at: Thu, 06 Dec 2018 20:29:39 GMT
+recorded_with: VCR 4.0.0

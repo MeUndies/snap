@@ -1,4 +1,10 @@
 
+0.1.6 / 2018-12-20
+==================
+
+  * Fix case expression bug in snoop_for_errors
+  * Add StockTotals#find
+
 0.1.5 / 2018-10-03
 ==================
 

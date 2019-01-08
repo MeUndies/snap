@@ -10,7 +10,7 @@ module Snap
       end
 
       def self.find(sku:)
-        client.get("/stocktotals/#{sku}")
+        client.get("/stocktotals?$filter=SKUId eq '#{sku}'")
       end
 
       def self.model

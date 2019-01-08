@@ -10,11 +10,22 @@ RSpec.describe Snap::Api::StockTotals do
   describe '#find' do
     subject { described_class.find(sku: sku) }
 
-    let(:sku) { 'B1000' }
+    context 'when is a regular SKU' do
+      let(:sku) { 'B1000' }
 
-    it 'lists the stock total', :vcr do
-      expect(subject.code).to eq 200
-      expect(subject.hydrate.class).to eq Snap::Models::StockTotalList
+      it 'lists the stock total', :vcr do
+        expect(subject.code).to eq 200
+        expect(subject.hydrate.class).to eq Snap::Models::StockTotalList
+      end
+    end
+
+    context 'when SKU has /' do
+      let(:sku) { 'U002-CAB-M/L' }
+
+      it 'lists the stock total', :vcr do
+        expect(subject.code).to eq 200
+        expect(subject.hydrate.class).to eq Snap::Models::StockTotalList
+      end
     end
   end
 end

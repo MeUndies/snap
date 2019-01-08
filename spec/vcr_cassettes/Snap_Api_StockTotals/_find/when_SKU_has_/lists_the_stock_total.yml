@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://mutestapi.snapfulfil.net/api/stocktotals/B1000
+    uri: https://mutestapi.snapfulfil.net/api/stocktotals?$filter=SKUId%20eq%20%27U002-CAB-M/L%27
     body:
       encoding: US-ASCII
       string: ''
@@ -31,12 +31,12 @@ http_interactions:
       X-Powered-By:
       - ASP.NET
       Date:
-      - Thu, 06 Dec 2018 20:29:21 GMT
+      - Tue, 08 Jan 2019 20:06:23 GMT
       Content-Length:
-      - '349'
+      - '354'
     body:
       encoding: UTF-8
-      string: '[{"SKUId":"B1000","LineID":"JJ5GJ39585","State":"W","Site":"0001","Facility":"MEUNDIES","BizId":"BIZ1","OwnerId":"MEUNDIES","Status":"00","Unit":"EAC","Qty":0.0,"QtyAllocated":0.0,"QtyAssigned":0.0,"QtyOrderIn":0.0,"QtyDueIn":11800.0,"QtyOrderOut":0.0,"QtyDueOut":0.0,"StockLevelIndicator":"00","DateLastMoved":"2018-11-30T09:51:22","Product":null}]'
+      string: '[{"SKUId":"U002-CAB-M/L","LineID":"JCRTJ6RBD7","State":"W","Site":"0001","Facility":"MEUNDIES","BizId":"BIZ1","OwnerId":"MEUNDIES","Status":"00","Unit":"EAC","Qty":0.0,"QtyAllocated":0.0,"QtyAssigned":0.0,"QtyOrderIn":0.0,"QtyDueIn":540.0,"QtyOrderOut":0.0,"QtyDueOut":2.0,"StockLevelIndicator":"00","DateLastMoved":"2018-11-19T16:53:22","Product":null}]'
     http_version: 
-  recorded_at: Thu, 06 Dec 2018 20:29:39 GMT
+  recorded_at: Tue, 08 Jan 2019 20:08:18 GMT
 recorded_with: VCR 4.0.0

@@ -7,6 +7,7 @@ require 'snap/client'
 require 'snap/response'
 
 require 'snap/api/errors/order_stage_error'
+require 'snap/api/errors/stock_total_not_found_error'
 
 require 'snap/api/outbound'
 require 'snap/api/stock_totals'

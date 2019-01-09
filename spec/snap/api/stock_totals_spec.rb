@@ -28,4 +28,16 @@ RSpec.describe Snap::Api::StockTotals do
       end
     end
   end
+
+  describe '#find!' do
+    subject { described_class.find!(sku: sku) }
+
+    context ' when sku is not in snap' do
+      let(:sku) { 'invalid-sku' }
+
+      it 'throws an exception', :vcr do
+        expect { subject }.to raise_error(Snap::Api::StockTotalNotFoundError)
+      end
+    end
+  end
 end

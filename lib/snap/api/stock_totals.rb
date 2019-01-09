@@ -13,6 +13,13 @@ module Snap
         client.get("/stocktotals?$filter=SKUId eq '#{sku}'")
       end
 
+      def self.find!(sku:)
+        response = find(sku: sku)
+        raise Api::StockTotalNotFoundError, "No stock totals found for #{sku}" if response.empty?
+
+        response
+      end
+
       def self.model
         Snap::StockTotalList
       end

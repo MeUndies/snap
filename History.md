@@ -1,4 +1,9 @@
 
+0.1.8 / 2019-01-08
+==================
+
+  * Add find! method that returns an exception when no stock totals found
+
 0.1.7 / 2019-01-08
 ==================
 

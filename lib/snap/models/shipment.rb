@@ -11,6 +11,20 @@ module Snap
         validate!
       end
 
+      # Fields added during last Snapfulfil upgrade.
+      property :ASNInd
+      property :ASNNumber
+      property :ActualWeight
+      property :BOL
+      property :CarrierScac
+      property :CustomerOrder
+      property :DC
+      property :DateInvoice
+      property :MasterBOL
+      property :Store
+      property :Tax
+      property :Variance
+
       property :ShipmentId, required: true
       property :BizId
       property :BizSalesOrder
@@ -32,7 +46,7 @@ module Snap
       property :PriorityAllocation
       property :PriorityDespatch
       property :CustomerRef
-      property :ConsigmentId
+      property :ConsignmentId
       property :PickGroupId
       property :ASNNumber
       property :DNoteNumber

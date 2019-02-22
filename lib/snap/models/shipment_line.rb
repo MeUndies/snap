@@ -4,6 +4,12 @@ module Snap
     class ShipmentLine < Hashie::Dash
       include Hashie::Extensions::IndifferentAccess
 
+      # New fields from latest Snap upgrade.
+      property :CustomerSKU
+      property :UPC
+      property :UPCDescription
+      property :Category
+
       property :ShipmentId, required: true
       property :Line
       property :Level

@@ -1,4 +1,10 @@
 
+0.1.12 / 2019-03-05
+==================
+
+  * Add Api::CustomerNameLengthError
+  * Update CustomerName model validation from 50 to 30 characters
+
 0.1.11 / 2019-02-28
 ==================
 

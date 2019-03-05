@@ -111,7 +111,7 @@ module Snap
       property :ShipContacts
       property :ShipmentDespatch
 
-      validates :CustomerName, length: { maximum: 50 }
+      validates :CustomerName, length: { maximum: 30 }, strict: Api::CustomerNameLengthError
     end
   end
 end

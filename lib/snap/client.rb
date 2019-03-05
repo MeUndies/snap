@@ -49,6 +49,7 @@ module Snap
       when 'Hash'
         raise Api::OrderStageError, httparty_response if httparty_response.parsed_response.value? 'ORDER_STAGE'
         raise Api::DefinitionError, httparty_response if httparty_response.parsed_response.value? 'DEFINITION'
+        raise Api::CustomerNameLengthError, httparty_response if httparty_response.parsed_response.value? 'LENGTH'
       end
     end
   end

@@ -1,3 +1,3 @@
 module Snap
-  VERSION = '0.1.12'.freeze
+  VERSION = '1.0.0'.freeze
 end

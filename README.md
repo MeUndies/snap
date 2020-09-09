@@ -8,6 +8,12 @@
 
 A ruby gem to interact with the Snapfulfil API.
 
+
+## Warning
+
+⚠️ This project was archived as is not maintained anymore. You can still download a read-only copy.
+
+
 ## Installation
 
 Add this line to your application's Gemfile:
